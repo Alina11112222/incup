@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Про нас — InCup</title>
+  <style>
+    :root {
+      --main-color: #7e57c2;
+      --bg-color: #ffffff;
+      --text-color: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--main-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .about-section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .about-section h2 {
+      color: var(--main-color);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      text-align: justify;
+    }
+
+    .about-values {
+      background-color: #f9f7fc;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .about-values h3 {
+      color: var(--main-color);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .value-item {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #f1eef9;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .about-section p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>InCup</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">Про нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>Про нас</h2>
+    <p>InCup — це не просто кав'ярня, це простір для натхнення, зустрічей та моментів, які хочеться запам'ятати. Ми створили місце, де кожна чашка кави має свою історію, а кожен гість відчуває себе як удома.</p>
+
+    <p>Наша команда щодня з любов'ю варить найкращу каву з відбірних зерен, стежить за якістю кожного напою та робить усе, щоб твій візит залишив приємний післясмак — як і наша кава.</p>
+
+    <div class="about-values">
+      <h3>Наші цінності</h3>
+      <div class="value-item"><strong>Якість:</strong> Ми обираємо тільки свіжі, високоякісні інгредієнти.</div>
+      <div class="value-item"><strong>Затишок:</strong> Створюємо атмосферу, в яку хочеться повертатися.</div>
+      <div class="value-item"><strong>Спільнота:</strong> Ми любимо наших гостей і підтримуємо локальну культуру.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 InCup. Всі права захищені. | Instagram: @incup.coffee
+  </footer>
+
+</body>
+</html>

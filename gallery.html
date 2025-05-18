@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Галерея — InCup</title>
+  <style>
+    :root {
+      --main-color: #7e57c2;
+      --bg-color: #ffffff;
+      --text-color: #333333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--main-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .gallery-section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .gallery-section h2 {
+      color: var(--main-color);
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      background-color: #f1eef9;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>InCup</h1>
+    <nav>
+      <a href="index.html">Головна</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">Про нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакти</a>
+    </nav>
+  </header>
+
+  <section class="gallery-section">
+    <h2>Галерея</h2>
+    <div class="gallery-grid">
+      <img src="https://uaplatforma.com.ua/wp-content/uploads/2023/08/kava-v-kavyahnyah-uzhhoroda.webp" alt="Кав'ярня в Ужгороді">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTiM5aVW9IzIjvQLs8TiEmexdwjF8Px3-2A&s" alt="Кавові зерна">
+      <img src="https://mir-tema.ru/upload/resize_cache/iblock/1b7/600_380_2/vfwxrd0f8y7peiae2wvcd99cm0l1o74f.jpg" alt="Інтер'єр кав'ярні">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR62pmHRqxbHNgRGlD-ejxALCA63a9TQvPuNg&s" alt="Чашка кави">
+      <img src="https://images.prom.ua/5597234092_w$%7Bwidth%7D_h$%7Bheight%7D_kava-lungo-idealnij.jpg" alt="Кава Лунго">
+      <img src="https://ua.igotoworld.com/frontend/webcontent/websites/1/images/gallery/2768369_800x600_Virmenka2.jpg" alt="Затишна кав'ярня">
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 InCup. Всі права захищені. | Instagram: @incup.coffee
+  </footer>
+
+</body>
+</html>
